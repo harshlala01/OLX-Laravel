@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f5;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef9fa;
+    padding: 12px 20px;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.logout-form {
+    display: inline;
+}
+
+/* .logout-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+} */
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #04a5e8
+}
+.sidebar-item-add-product {
+    color: rgb(5, 126, 255);
+    font-weight: bold;
+     background: #64abe2;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+    /* font-color: white; */
+    color: white;
+}
+
+/* normal hover */
+/* .sidebar-item:hover {
+    background: #e6f2ff;  
+} */
+
+.sidebar-item:hover {
+    background: rgba(5, 126, 255, 0.1); /* soft transparent blue */
+    border-radius: 5px;
+}
+/* SEARCH */
+.search-box {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+.sell-btn {
+    background: #64abe2;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+    /* font-color: white; */
+    color: white;
+}
+
+.username{
+    color: black;
+    font-size: large;
+    font-weight: 500;
+	margin-right: 7px
+
+}
+.sell-btn:hover {
+    background: #3d8fd1;
+}
+
+/* LAYOUT */
+.main-container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: white;
+    padding: 27px;
+    min-height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #002f34;
+}
+
+.sidebar-item {
+    display: block;
+    margin: 6px 0;
+    color: #333;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.sidebar-item:hover {
+    background: #f2f2f2;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    color: #002f34;
+}
+
+/* PRODUCTS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.location {
+    color: gray;
+    font-size: 13px;
+}
+
+.category {
+    font-size: 12px;
+    color: #777;
+}
+
+/* AUTH BOX */
+.auth-container {
+    width: 350px;
+    margin: 80px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 40px 50px 40px 40px;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-container input,
+.auth-container select,
+.auth-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-container button {
+    width: 106%;
+    padding: 10px;
+    background: #ffce32;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-container button:hover {
+    background: #e6b800;
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* FLOAT BUTTON */
+.fab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #ffce32;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
