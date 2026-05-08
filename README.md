@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  OLX Marketplace Clone (Laravel)
 
 A simple OLX-like marketplace web application built with Laravel where users can post products/services and browse listings by category and city.
@@ -52,3 +53,7 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
+=======
+# OLX-Laravel
+OLX  website built with Laravel. Users can register, add products/services, browse category-wise listings, and view city-wise products.
+>>>>>>> a91412af7aaaa1888c276381fbff39a5f5204809
